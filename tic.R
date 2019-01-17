@@ -18,7 +18,8 @@ if (Sys.getenv("id_rsa") != "") {
       add_code_step(remotes::install_github("lockedata/starters")) %>%
       add_code_step(remotes::install_github("metrumresearchgroup/covrpage")) %>%
       add_code_step(install.packages("spelling")) %>%
-      add_code_step(covrpage::covrpage_ci()) %>%
+      add_code_step(library("covrpage")) %>%
+      add_code_step(covrpage_ci()) %>%
       add_step(step_push_deploy(commit_paths = "tests/README.md")) %>%
       add_step(step_build_pkgdown()) %>%
       add_step(step_push_deploy(path = "docs", branch = "gh-pages")) %>%
