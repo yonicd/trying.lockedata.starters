@@ -1,0 +1,19 @@
+---
+title: "trying.lockedata.starters"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{trying.lockedata.starters}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(trying.lockedata.starters)
+```
